@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sunny AI</title>
+        <link rel="stylesheet" href="/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="top-nav">
+            <div class="user-info">
+                <img id="userAvatar" class="user-avatar" src="" alt="User Avatar">
+                <span id="userName"></span>
+            </div>
+            <button id="signOut" class="sign-out-btn">Sign Out</button>
+        </nav>
+        <div class="overview-section">
+            <h1>Sunny AI: Here to help</h1>
+            <p class="overview-text">
+                Introducing an AI-powered conversational chatbot designed to make mental health support accessible, intuitive, and engaging. Built with a focus on creating authentic connections, our chatbot offers personalized conversations, mood tracking, and actionable insights to help you navigate life's challenges.
+            </p>
+            <p class="overview-tagline">
+                It's more than just a chatbot—it's your intelligent companion for emotional well-being. 🚀✨
+            </p>
+        </div>
+        <div class="ai-indicator">
+            <div class="pulse-circle"></div>
+        </div>
+        <div class="controls">
+            <button id="startButton">Start Conversation</button>
+            <button id="stopButton" disabled>Stop Conversation</button>
+        </div>
+        <div class="status-container">
+            <p>Status: <span id="connectionStatus" class="disconnected">Disconnected</span></p>
+            <p>Agent is <span id="agentStatus">listening</span></p>
+        </div>
+        <script type="module" src="/firebase-config.js"></script>
+        <script type="module" src="/auth.js"></script>
+        <script type="module" src="/script.js"></script>
+    </body>
+</html>
